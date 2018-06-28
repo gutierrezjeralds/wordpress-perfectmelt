@@ -1,0 +1,33 @@
+#wpadminbar{
+  display: none !important;
+}
+
+.bg-header-footer{
+  background: $navbar-bg !important;
+}
+
+.sticky-primary-header-navigation {
+  position: fixed;
+  top: 48px;
+  width: 100%
+}
+
+.header-section-2{
+  background-image: url('../../../../public/img/banners/4.png');
+}
+
+.page-footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  .footer-copyright{
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255,255,255,.6);
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+    font-size: .9rem;
+  }
+}

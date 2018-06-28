@@ -1,0 +1,162 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* IE 6 */
+/* line 2, ../../sass/sass/components/_common.scss */
+* html .page-footer {
+  position: absolute;
+  top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+/* line 7, ../../sass/sass/components/_common.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+}
+
+/* line 16, ../../sass/sass/components/_common.scss */
+body *:not([class*="fa"]) {
+  font-family: "Roboto", "Arial", "Helvetica", "sans-serif" !important;
+}
+
+/* line 21, ../../sass/sass/components/_common.scss */
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+/* line 31, ../../sass/sass/components/_common.scss */
+.z-index-10 {
+  z-index: 10;
+}
+
+/* line 34, ../../sass/sass/components/_common.scss */
+.z-index-20 {
+  z-index: 20;
+}
+
+/* line 38, ../../sass/sass/components/_common.scss */
+.push-100 {
+  height: 100px;
+}
+
+/* line 42, ../../sass/sass/components/_common.scss */
+.word-break-all {
+  word-break: break-all;
+}
+
+/* line 47, ../../sass/sass/components/_common.scss */
+.before-after-double-line:before, .before-after-double-line:after {
+  content: "";
+  position: absolute;
+  margin: 10px 0 0 -25px;
+  width: 20px;
+  height: 4px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+/* line 56, ../../sass/sass/components/_common.scss */
+.before-after-double-line:after {
+  margin-left: 5px;
+}
+
+/* Isotope Transitions
+------------------------------- */
+/* line 63, ../../sass/sass/components/_common.scss */
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 72, ../../sass/sass/components/_common.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 80, ../../sass/sass/components/_common.scss */
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+
+/* End Isotope Transitions
+------------------------------- */
+@media (min-width: 768px) {
+  /* line 3, ../../sass/sass/components/_grid.scss */
+  .primary-header-navigation .navbar-nav {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  /* line 10, ../../sass/sass/components/_grid.scss */
+  .primary-header-navigation .navbar-nav {
+    justify-content: normal;
+  }
+
+  /* line 15, ../../sass/sass/components/_grid.scss */
+  .isotope .item {
+    position: static !important;
+    -webkit-transform: translate(0px, 0px) !important;
+    -moz-transform: translate(0px, 0px) !important;
+    transform: translate(0px, 0px) !important;
+  }
+}
+/* line 1, ../../sass/sass/components/_headerFooter.scss */
+#wpadminbar {
+  display: none !important;
+}
+
+/* line 5, ../../sass/sass/components/_headerFooter.scss */
+.bg-header-footer {
+  background: #EAEAED !important;
+}
+
+/* line 9, ../../sass/sass/components/_headerFooter.scss */
+.sticky-primary-header-navigation {
+  position: fixed;
+  top: 48px;
+  width: 100%;
+}
+
+/* line 15, ../../sass/sass/components/_headerFooter.scss */
+.header-section-2 {
+  background-image: url("../../../../public/img/banners/4.png");
+}
+
+/* line 19, ../../sass/sass/components/_headerFooter.scss */
+.page-footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 24, ../../sass/sass/components/_headerFooter.scss */
+.page-footer .footer-copyright {
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: .9rem;
+}

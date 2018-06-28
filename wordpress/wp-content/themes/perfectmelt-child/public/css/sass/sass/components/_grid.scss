@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .primary-header-navigation{
+    .navbar-nav {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .primary-header-navigation{
+    .navbar-nav {
+      justify-content: normal;
+    }
+  }
+
+  .isotope .item {
+    position: static ! important;
+    -webkit-transform: translate(0px, 0px) ! important;
+    -moz-transform: translate(0px, 0px) ! important;
+    transform: translate(0px, 0px) ! important;
+  }
+}
